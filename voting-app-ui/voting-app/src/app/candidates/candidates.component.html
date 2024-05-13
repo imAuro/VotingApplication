@@ -1,0 +1,35 @@
+<hr>
+<div class="container">
+    <form #addForm="ngForm"  (ngSubmit)="addCandidate(addForm)">
+        <h2>Add candidate</h2>
+        <hr>
+        <div>
+            <input type="text" placeholder="candidate name" [(ngModel)]="model.name" name="candidateName">
+        </div>
+
+        <div>
+                <button type="submit"> Add</button>
+        </div>
+    </form>
+</div>
+<hr>
+
+<div class="container">
+    <table>
+        <tbody>
+        <tr>
+            <th colspan="2" >Candidates</th>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>Votes</th>
+        </tr>
+        <tr *ngFor="let candidate of candidates$ | async">
+            <td>{{candidate.name}}</td>
+            <td>{{candidate.votes}}</td>
+        </tr>
+    
+    </tbody>
+    </table>
+    
+    </div>

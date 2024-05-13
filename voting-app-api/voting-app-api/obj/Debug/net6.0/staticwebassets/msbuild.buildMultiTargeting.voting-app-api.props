@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\voting-app-api.props" />
+</Project>

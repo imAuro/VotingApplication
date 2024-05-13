@@ -1,0 +1,22 @@
+<div class="container">
+
+    <form #voteForm="ngForm" (ngSubmit)="vote(voteForm)">
+        <div class="form-group text-center">
+
+            <select name="voterSelect" [(ngModel)]="model.voterId" required>
+                <option [ngValue]="-1" [disabled]="true" [hidden]="true">I am</option>
+                <option *ngFor="let voter of voters$ | async" [value]="voter.id">{{voter.name}}</option>
+            </select>
+
+            <select name="candidateSelect" [(ngModel)]="model.candidateId"
+                required>
+                <option [ngValue]="-1" [disabled]="true" [hidden]="true">I vote for</option>
+                <option *ngFor="let candidate of candidates$ | async" [value]="candidate.id">{{candidate.name}}</option>
+            </select>
+            <div>
+                <button type="submit"> VOTE</button>
+            </div>
+        </div>
+    </form>
+
+</div>

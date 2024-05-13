@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "uOfjwZwRcCsOtjd5U43l3YwxnTmMERr4wgoZ6pUQL94=",
+  "Source": "voting-app-api",
+  "BasePath": "_content/voting-app-api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
