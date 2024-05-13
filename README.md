@@ -10,10 +10,17 @@ UI: http://localhost:4200/
 
 API: https:localhost:7133/
 
-Database is written in MySQL. Need to run migration 
+Database is written in MySQL.
+
+Need to run migration 
+
 Add-Migration InitialMigration.
+
 Update-Database
 
+
 To run UI: 
+
 npm install
+
 ng serve
