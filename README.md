@@ -7,6 +7,7 @@ The two sections can be either on single page or separate ones. Important part i
 Please push and publish your complited task to GitHub and share it with us.
 
 UI: http://localhost:4200/
+
 API: https:localhost:7133/
 
 Database is written in MySQL. Need to run migration 
